@@ -55,13 +55,12 @@ box.addEventListener("keypress",function(a){
 
 function removeParent(evt){
 
-	// let task = document.createTextNode("abcd");
-	// let li = document.createElement("li");
-	// li.appendChild(evt.target);
-	done.appendChild(event.target.parentNode);
+	let task = document.createTextNode("task added");
+	let li = document.createElement("li");
+	li.appendChild(task);
+	done.appendChild(li);
 
 	evt.target.parentNode.remove();
-	console.log(done);
-	// console.log(li)
-	console.log(event.target.parentNode)
+	console.log(evt.target.parentNode.innerHTML);
+	
 }
