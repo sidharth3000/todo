@@ -11,6 +11,8 @@ save.addEventListener("click",function(){
 
 	if(box.value.length>0)
 	{
+		var empty = document.getElementById("empty");
+		 empty.parentNode.removeChild(empty);
 	let txt = document.createElement("span");
 	let del = document.createElement("i");
 	del.classList.add("fa");
@@ -44,6 +46,8 @@ box.addEventListener("keypress",function(a){
 
 	if(a.keyCode===13 && box.value.length>0)
 	{
+		var empty = document.getElementById("empty");
+		 empty.parentNode.removeChild(empty);
 	let del = document.createElement("i");
 	let txt = document.createElement("span");
 	del.classList.add("fa");
