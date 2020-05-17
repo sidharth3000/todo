@@ -35,6 +35,7 @@ body
 	border:3px solid #91A3AA;
 	font-family: 'Amatic SC', cursive;
 	color:#4FCEFF;
+	height: 50%;
 }
 
 #box
@@ -50,34 +51,41 @@ body
 
 #box:hover
 {
-	background-color: #C1D6DD;
+	background-color: #050F13;
 	
-	color:#4FCEFF;
-	transform: scale(1.1);
+	color:white;
 }
 
 #save
 {
-	transition: all .3s;
+	padding: 5px 20px;
+	background-color: #4FCEFF;
+	outline: none;
+	border-radius: 20px;
+	cursor: pointer;
+	border: none;
+	font-family: 'Amatic SC', cursive;
+	height:auto;
+	width: 40%;
+	font-size: 1.5em;
+	border:2px solid #A3E6FF;
+
 }
 
 #save:hover
 {
-	color: #B9DFFF;
+	background-color: #050F13;
+	color: white;
 }
 
 #clear
 {
-	font-size: 5.5em;
+	font-size:250%;
 	color:#91A3AA ;
 	text-align: center;
-	transition: all .3s;	
+	transition: all .1s;	
 }
 
-#clear:hover
-{
-	color:#4FCEFF;
-}
 
 .list
 {
@@ -122,7 +130,7 @@ footer
 
 #due:hover
 {
-	transform: scale(1.1);
+	transform: scale(1.03);
 }
 
 #done
@@ -136,7 +144,21 @@ footer
 
 #done:hover
 {
-	transform: scale(1.1);
+	transform: scale(1.03);
+}
+
+#progress
+{
+	border:1px solid black;
+	padding:3%;
+	background-color: #FF8915;
+	border:2px solid #FF6A00;
+	transition: all .3s;
+}
+
+#progress:hover
+{
+	transform: scale(1.03);
 }
 
 i
@@ -147,5 +169,23 @@ i
 
 i:hover
 {
-	transform: scale(1.2);
+	transform: scale(1.1);
+}
+
+
+#clear:hover
+{
+	color:#4FCEFF;
+	transform: scale(1)
+}
+
+.animation
+{
+	animation-name: example;
+  	animation-duration: 0.5s;
+}
+
+@keyframes example {
+  0%   {transform: scale(1.1);}
+  100% {transform: scale(1);}
 }
